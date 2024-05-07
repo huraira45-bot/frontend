@@ -1,8 +1,14 @@
 import { useState } from 'react'
+import { Route, Routes } from "react-router-dom";
+
 // import reactLogo from './assets/react.svg'
 // import twaLogo from './assets/tapps.png'
 // import viteLogo from '/vite.svg'
-import './App.css'
+
+import Layout from "./Layout/Layout";
+import Screen2 from './pages/Screen2'
+import Screen3 from './pages/Screen3'
+
 
 import WebApp from '@twa-dev/sdk'
 
@@ -10,19 +16,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      {/*  */}
-      <div className="card">
-        <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
-            Show Alert
-        </button>
-      </div>
-    </>
+    <Routes>
+      <Route   path='/'  element={<Layout/>} />
+      <Route   path='/exchange'  element={<Screen2/>} />
+      <Route   path='/screen3'  element={<Screen3/>} />
+     
+    </Routes>
   )
 }
 
