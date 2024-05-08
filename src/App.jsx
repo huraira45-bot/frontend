@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/{app-name}" element={<Layout />} />
+        <Route path="/{tg-mini-app}" element={<Layout />} />
         <Route path="/exchange" element={<Screen2 />} />
         <Route path="/screen4" element={<Screen3 />} />
       </Routes>
