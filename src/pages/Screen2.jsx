@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import logo1 from '../assets/Navbar/logo.svg'
+import logo2 from '../assets/logo2.svg'
 import { FaBars } from "react-icons/fa";
 import Footer from '../Components/Footer';
 
@@ -11,6 +11,7 @@ import {Link} from 'react-router-dom'
 import usd from '../assets/home/Exchanger/usd.svg'
 import { IoIosArrowDown } from "react-icons/io";
 import { FaUnlockAlt } from "react-icons/fa";
+import Faqs2 from '../Components/Faqs2';
 
 
 const Screen2 = () => {
@@ -90,7 +91,7 @@ const Screen2 = () => {
   <div className='p-8 border-b-[0.1px] border-white/60 '>
 <div className='flex w-full justify-between items-center h-full'>
 <div className='flex'>
-    <div ><img src={logo1} alt="" /></div>
+    <div ><img src={logo2} alt="" /></div>
 </div>
 <div       onClick={toggleSidebar} className='cursor-pointer'><FaBars color='black' size={25} /></div>
 </div>
@@ -153,14 +154,11 @@ const Screen2 = () => {
 </div>
 </div>
 
-<div className='bg-[#0F75FC] hover:bg-[#0F75FC]/60 cursor-pointer rounded-xl h-12 mt-4 w-full  flex justify-center'>
-    <Link to={'/exchange'} className='p-1 text-center flex justify-center items-center  text-white text-[12px] font-[500] font-sans '>Exchange</Link>
-</div>
 
 </div>
 </div>
 
-
+<Faqs2 />
   {/* Footer */}
 <Footer/>
   </>

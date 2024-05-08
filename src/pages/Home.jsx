@@ -11,6 +11,7 @@ import Support from '../Components/Support'
 import Buy_Crypto from '../Components/Buy_Crypto'
 import Trustpilot from '../Components/Trustpilot'
 import Currency from '../Components/Currency'
+import How_it_works from '../Components/How_it_works'
 
 const Home = () => {
   return (
@@ -44,6 +45,7 @@ const Home = () => {
 <Buy_Crypto/>
 <Trustpilot/>
 <Currency/>
+<How_it_works />
   </div>
 <Footer/>
 </div>

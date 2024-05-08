@@ -10,7 +10,6 @@ export default {
         'regal-blue': '#062763',
       },
     }
-  
   },
   plugins: [],
 }
